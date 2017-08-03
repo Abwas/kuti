@@ -1,11 +1,18 @@
 {% extends "base.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
-{% block page_content %}
-<div class="container">
-	{{ wtf.quick_form(form) }}
-</div>
-{% endblock page_content %}
+{% block main_header %}
 
+{% endblock main_header %}
+{% block content %}
+<div class="container">
+{% block page_content %}
+<div class="page-header" style="margin-top: 100px;">
+  <h1>Welcome to The School Profile Form of The Capstone Project</h1>
+</div>
+{{ wtf.quick_form(form) }}
+{% endblock page_content %}
+</div>
+{% endblock content %}
 
 
 

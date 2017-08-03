@@ -14,7 +14,7 @@ class LoginForm(Form):
 
 
 class ProfileForm(Form):
-	name = StringField('Name', validators=[Required()])
+	name = StringField('Name of School', validators=[Required()])
 	location = StringField('Location', validators=[Required()])
 	profile_form = TextAreaField('Description', validators=[Required()])
 	submit = SubmitField('Submit')
